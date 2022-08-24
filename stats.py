@@ -1,5 +1,5 @@
 class Stats:
-    def __init__(self,attack_damage, ability_power, health, mana, level, attack_range, damage_dealt):
+    def __init__(self,attack_damage, ability_power, health, mana, level, attack_range, damage_dealt, cooldown):
         self.attack_damage = attack_damage
         self.ability_power = ability_power
         self.health = health
@@ -7,6 +7,7 @@ class Stats:
         self.level = level
         self.attack_range = attack_range
         self.damage_dealt = damage_dealt
+        self.cooldown = cooldown
     
     def levelup(self):
         self.attack_damage += 5
