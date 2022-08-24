@@ -9,23 +9,29 @@ if __name__ == "__main__":
     print("Fizz")
     action = input("Please select your champion: ")
     if action == "Brand":
+        print("-" * 99)
         print("Basic Attack")
         print("Use Q Ability")
         action = input("It's your turn now, please choose an action: ")
         if action == "Basic Attack":
+            print("-" * 99)
             brand_stat.basic_attack()
             cooldown = 0
         elif action == "Use Q Ability":
+            print("-" * 99)
             brand_stat.use_q_ability()
             cooldown = brand_stat.cooldown
     elif action == "Fizz":
+        print("-" * 99)
         print("Basic Attack")
         print("Use Q Ability")
         action = input("It's your turn now, please choose an action: ")
         if action == "Basic Attack":
+            print("-" * 99)
             fizz_stat.basic_attack()
             cooldown = 0
         elif action == "Use Q Ability":
+            print("-" * 99)
             fizz_stat.use_q_ability()
             cooldown = fizz_stat.cooldown
     if cooldown > 0:
